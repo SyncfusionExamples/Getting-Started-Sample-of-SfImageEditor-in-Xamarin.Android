@@ -37,4 +37,4 @@ SfImageEditor editor = new SfImageEditor();
 ```  
 Loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
 
-[](gettingstarted.png)
+![](gettingstarted.png)
