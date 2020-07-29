@@ -28,7 +28,7 @@ Create an instance of SfImageEditor.
 SfImageEditor editor  = new SfImageEditor(this);
     SetContentView(editor);
     
-    ```
+```
     
 Load an image to the image editor as bitmap object.Since SfImageEditor supports bitmap images you can load the image to the control as a bitmap object only.
 ```
