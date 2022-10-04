@@ -1,40 +1,43 @@
-# Getting started sample of SfImageEditor in Xamarin.Android
+# Getting Started Sample of SfImageEditor in Xamarin.Android
 
-This section explains you the steps required to load an image to the image editor. Image editor has a built in toolbar which has options to edit the image with shapes, path, text, crop and flip.
+This repository contains sample for how to get started with the [Syncfusion Xamarin.Android Image Editor](https://help.syncfusion.com/xamarin-android/sfimageeditor/getting-started) control. The image editor control for Xamarin.Android is a very handy tool, Which is used to edit an image by annotating with free hand drawing paths, text, and built-in shapes. It also allows to crop and flip an image.
 
-## Reference Essential Studio components in your solution
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+## Syncfusion controls
 
-{Syncfusion Installed location}\Essential Studio\15.2.0.40\lib
+This project used the following Syncfusion control(s):
+* [SfImageEditor](https://www.syncfusion.com/xamarin-android-ui-controls/image-editor)
 
-**NOTE**
+## Requirements to run the sample
 
-Assemblies are available in unzipped package location in Mac.
+* [Visual Studio](https://visualstudio.microsoft.com/downloads/) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 
-Add the following assembly references to the Android project,
+Refer to the following link for more details - [System Requirements](https://help.syncfusion.com/xamarin-android/system-requirements)
 
-`android\Syncfusion.SfImageEditor.Android.dll`
+## How to run the sample
 
-**IMPORTANT**
+1. Clone the sample and open it in Visual Studio.
 
-Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this link to know about registering Syncfusion license key in your Xamarin application to use our components.
+   *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
+   
+2. Register your license key in the MainActivity.cs file as demonstrated in the following code.
 
-## Initialize the image editor
+		protected override void OnCreate(Bundle savedInstanceState)
+		{
+			//Register Syncfusion license
+			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
 
-The following steps explain on how to create a image editor and configure its elements,
+			base.OnCreate(savedInstanceState);
 
-Create an instance of SfImageEditor.
-```
-SfImageEditor editor  = new SfImageEditor(this);
-    SetContentView(editor);
-    
-```
-    
-Load an image to the image editor as bitmap object.Since SfImageEditor supports bitmap images you can load the image to the control as a bitmap object only.
-```
-SfImageEditor editor = new SfImageEditor();
-    editor.Bitmap = BitmapFactory.DecodeResource(Resources, Resource.Drawable.screenshot);
-```  
-Loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
+			// Set our view from the "main" layout resource
+			SetContentView(Resource.Layout.Main);
+		}
+		
+	Refer to this [link](https://help.syncfusion.com/xamarin-android/licensing/overview) for more details.
+	
+3. Clean and build the application.
 
-![](gettingstarted.png)
+4. Run the application.
+
+## License
+
+Syncfusion has no liability for any damage or consequence that may arise by using or viewing the samples. The samples are for demonstrative purposes, and if you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage that is related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion’s samples.
