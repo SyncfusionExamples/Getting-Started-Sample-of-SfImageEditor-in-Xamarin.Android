@@ -1,6 +1,6 @@
 # Getting Started Sample of SfImageEditor in Xamarin.Android
 
-This repository contains sample for how to get started with the [Syncfusion Xamarin.Android Image Editor](https://help.syncfusion.com/xamarin-android/sfimageeditor/getting-started) control. The image editor control for Xamarin.Android is a very handy tool, Which is used to edit an image by annotating with free hand drawing paths, text, and built-in shapes. It also allows to crop and flip an image.
+This repository contains sample to get started with the [Syncfusion Xamarin.Android Image Editor](https://help.syncfusion.com/xamarin-android/sfimageeditor/getting-started) control. The image editor control for Xamarin.Android is a very handy tool, Which is used to edit an image by annotating with free hand drawing paths, text, and built-in shapes. It also allows to crop and flip an image.
 
 ## Syncfusion controls
 
